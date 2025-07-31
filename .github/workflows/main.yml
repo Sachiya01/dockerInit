@@ -15,7 +15,7 @@ jobs:
 
       - name: Run tests
         run: docker ps
-#sachith
+#sachith1
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-demo:latest .
 
