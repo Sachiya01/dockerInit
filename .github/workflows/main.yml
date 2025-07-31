@@ -17,7 +17,7 @@ jobs:
         run: docker ps
 
       - name: Build Docker image
-        run: docker build -t sachithliyanage07@gmail.com/app:latest .
+        run: docker build -t sachithliyanage07@gmail.com/app .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -26,6 +26,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push sachithliyanage07@gmail.com/app:latest
+        run: docker push sachithliyanage07@gmail.com/app
 
 
