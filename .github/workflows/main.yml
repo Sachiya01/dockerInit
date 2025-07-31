@@ -13,11 +13,8 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v3
 
-      - name: Build docker image
-        run: docker build -t sachith .
-
       - name: Run compose
-        run: docker compose up
+        run: docker compose up -d
 
       - name: Run tests
         run: docker ps
