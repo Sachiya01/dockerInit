@@ -13,9 +13,6 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v3
 
-      - name: Run compose
-        run: docker compose up -d
-
       - name: Run tests
         run: docker ps
 
